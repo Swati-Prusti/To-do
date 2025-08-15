@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>TO DO LIST</h1>
+    <img src="to-do.jpg" alt="Bear" class="bear">
+    <ul id="todo-list">
+        <li draggable="true">
+            <input type="checkbox" onchange="toggleComplete(this)">
+            <input type="text" class="task-text" placeholder="Write your task...">
+            <input type="datetime-local" class="task-datetime">
+            <button class="delete-btn" onclick="deleteTask(this)">✖</button>
+        </li>
+    </ul>
+    <button class="add-btn" onclick="addTask()">Add Task</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

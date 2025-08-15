@@ -1,0 +1,98 @@
+body {
+    font-family: 'Comic Sans MS', cursive;
+    background-color: #371907;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    background-color: #fff7e1;
+    border-radius: 15px;
+    box-shadow: 0px 6px 25px rgba(0,0,0,0.2);
+    padding: 35px 45px;
+    width: 520px;
+    text-align: center;
+}
+h1 {
+    color: #754f34;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.bear {
+    width: 140px;
+    margin-bottom: 25px;
+    animation: float 2s ease-in-out infinite;
+}
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    display: flex;
+    align-items: center;
+    margin: 18px 0;
+    border-bottom: 1px dotted #a67c52;
+    padding-bottom: 8px;
+    gap: 8px;
+}
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+.task-text {
+    flex: 1;
+    font-size: 18px;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+.task-text:focus {
+    background-color: #fff2d9;
+    border-radius: 5px;
+    padding: 4px;
+}
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+.task-datetime {
+    font-size: 11px;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #754f34;
+    width: 130px;
+    opacity: 0.7;
+}
+.delete-btn {
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+button.add-btn {
+    margin-top: 20px;
+    padding: 12px 18px;
+    font-size: 18px;
+    background-color: #f5c07a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+button.add-btn:hover {
+    background-color: #f0a94d;
+}
+li.dragging {
+    opacity: 0.5;
+}
